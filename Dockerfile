@@ -25,6 +25,9 @@ RUN apt-get -y update && \
     zip \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
+# Install Flask
+RUN cd ~ && \
+    pip3 install opencv-python opencv-contrib-python matplotlib
 
 # Install DLIB
 RUN cd ~ && \
@@ -36,7 +39,7 @@ RUN cd ~ && \
 
 # Install Flask
 RUN cd ~ && \
-    pip3 install flask flask-cors
+    pip3 install virtualenv flask flask-cors
 
 
 # Install Face-Recognition Python Library
