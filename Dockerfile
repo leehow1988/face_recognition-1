@@ -45,7 +45,7 @@ RUN cd ~ && \
 # Install Face-Recognition Python Library
 RUN cd ~ && \
     mkdir -p face_recognition && \
-    git clone https://github.com/ageitgey/face_recognition.git face_recognition/ && \
+    git clone https://github.com/leehow1988/face_recognition.git face_recognition/ && \
     cd face_recognition/ && \
     pip3 install -r requirements.txt && \
     python3 setup.py install
