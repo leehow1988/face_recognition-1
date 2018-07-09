@@ -32,7 +32,7 @@ RUN cd ~ && \
 # Install DLIB
 RUN cd ~ && \
     mkdir -p dlib && \
-    git clone -b 'v19.7' --single-branch https://github.com/leehow1988/dlib.git dlib/ && \
+    git clone -b 'v19.7' --single-branch https://gitee.com/leehow1988/dlib.git dlib/ && \
     cd  dlib/ && \
     python3 setup.py install --yes USE_AVX_INSTRUCTIONS
 
@@ -45,7 +45,7 @@ RUN cd ~ && \
 # Install Face-Recognition Python Library
 RUN cd ~ && \
     mkdir -p face_recognition && \
-    git clone https://github.com/leehow1988/face_recognition.git face_recognition/ && \
+    git clone https://gitee.com/leehow1988/face_recognition.git face_recognition/ && \
     cd face_recognition/ && \
     pip3 install -r requirements.txt && \
     python3 setup.py install
